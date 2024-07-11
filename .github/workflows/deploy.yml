@@ -39,5 +39,4 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa ubuntu@ec2-3-236-188-246.compute-1.amazonaws.com << 'EOF'
             docker load -i /home/ubuntu/my-nginx.tar
-            docker run -d -p 80:80 --name my-nginx-container my-nginx
-            EOF 
+            docker run -d -p 80:80 --name my-nginx-container my-nginx 
